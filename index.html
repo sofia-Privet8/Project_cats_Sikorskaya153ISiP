@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Породы кошек</title>
+	<script>
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    })();
+  </script>
+</head>
+<body>
+ <header>
+   <nav>
+   	<ul class="nav_menu">
+   		<li><a href="index.html">Главная</a></li>
+   		<li><a href="kotiki2.html">Топ 5 котов</a></li>
+   		<li><a href="kotiki3.html">Советы по выбору</a></li>
+   	</ul>
+   </nav>
+ </header>
+ <main>
+
+	<button id="themeToggle">Переключить тему</button>
+<br>
+<img src="главная.png"/ class="my-photo">
+
+ 	<div class="card">
+ 		<p>Если вы решили завести кошку, важно выбрать породу, подходящую вашему образу жизни. Мы составили рейтинг пяти популярных пород с кратким описанием их особенностей.</p>
+ 	</div>
+ </main>
+ <footer>
+ 	<div class="button">
+ 	</div>
+ </footer>
+ <script src="script.js"></script>
+</body>
+</html>
